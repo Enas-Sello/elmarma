@@ -1,8 +1,44 @@
 :root {
   --mainRadius: 10px;
   --lightGreen: #009d2c;
+  --fonstSiza: 14px;
 }
-
+.App {
+  background: #e8eff5;
+}
+* {
+  font-size: 14px;
+  font-weight: 500;
+}
+img {
+  object-fit: contain;
+}
+.Social svg {
+  fill: #c5c1c1;
+}
+a {
+  outline: none !important;
+  text-decoration: none !important;
+  padding: 2px 1px 0 !important;
+  color: white !important;
+  position: relative;
+}
+.RoutLink a::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  background-color: #c5c1c1;
+  bottom: 4px;
+  right: -30px;
+}
+.fsmain {
+  font-size: var(--fonstSiza);
+  font-weight: 500;
+}
+.rounded {
+  border-radius: var(--mainRadius) !important;
+}
 .main {
   background: #ffffff;
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.25);
@@ -15,4 +51,35 @@
   top: 2rem;
   left: 1rem;
   width: 40%;
+}
+
+.swiper-rtl .swiper-button-prev,
+.swiper-button-prev,
+.swiper-rtl {
+  background-color: #fff;
+  top: 22px !important;
+  left: 0px !important;
+  height: 100% !important;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.25);
+}
+.swiper-button-next,
+.swiper-rtl,
+.swiper-rtl .swiper-button-next {
+  background-color: #fff;
+  top: 22px !important;
+  right: 0px !important;
+  height: 100% !important;
+  box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.25);
+}
+.bgOrang {
+  background-color: #e68735 !important;
+}
+.sliderAfter::after{
+ content: "";
+  position: absolute;
+  width: 1px;
+  height: 90%;
+  background-color: #c5c1c1;
+  bottom: 4px;
+  right: -30px;
 }

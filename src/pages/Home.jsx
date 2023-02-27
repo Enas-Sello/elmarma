@@ -2,6 +2,7 @@
 ///
 import { Container, Row } from "react-bootstrap"
 import { Helmet } from "react-helmet"
+import Footer from "../components/Footer"
 import { Navbar } from "../components/Navbar"
 import SideBar from "../components/SideBar"
 import SwiperComp from "../components/SwiperComp"
@@ -57,6 +58,7 @@ export const Home = ({ title }) => {
           <Posts />
         </Row>
       </Container>
+      <Footer />
     </>
   )
 }
