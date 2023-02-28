@@ -33,13 +33,10 @@ const PostsCard = ({
             {ImgOverlay ? (
               <Card.ImgOverlay>
                 <p
-                  className="card-text"
+                  className="card-text text-center"
                   style={{
                     position: "absolute",
                     bottom: "1rem",
-                    left: "50%",
-                    transform: "translate(25%)",
-                    width: "100%",
                   }}
                 >
                   <small className="text-white fw-bold w-100">

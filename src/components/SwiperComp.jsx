@@ -16,6 +16,18 @@ function SwiperComp() {
       time: "18:00",
       imgSrcSecond:
         "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
+      badgeColor: " #e68735",
+    },
+    {
+      imgSrcFirst:
+        "https://media.gemini.media/img/yallakora/IOSTeams//120//2021/9/8/Elahly2021_9_8_16_46.jpg",
+      MainTitle: "دوري أبطال إفريقيا",
+      result: [0, 1],
+      status: "لم تلعب بعد",
+      time: "18:00",
+      imgSrcSecond:
+        "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
+      badgeColor: " #615F59",
     },
     {
       imgSrcFirst:
@@ -26,6 +38,7 @@ function SwiperComp() {
       time: "18:00",
       imgSrcSecond:
         "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
+      badgeColor: " #e68735",
     },
     {
       imgSrcFirst:
@@ -36,36 +49,7 @@ function SwiperComp() {
       time: "18:00",
       imgSrcSecond:
         "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
-    },
-    {
-      imgSrcFirst:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2021/9/8/Elahly2021_9_8_16_46.jpg",
-      MainTitle: "دوري أبطال إفريقيا",
-      result: [0, 1],
-      status: "تلعب الان",
-      time: "18:00",
-      imgSrcSecond:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
-    },
-    {
-      imgSrcFirst:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2021/9/8/Elahly2021_9_8_16_46.jpg",
-      MainTitle: "دوري أبطال إفريقيا",
-      result: [0, 1],
-      status: "تلعب الان",
-      time: "18:00",
-      imgSrcSecond:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
-    },
-    {
-      imgSrcFirst:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2021/9/8/Elahly2021_9_8_16_46.jpg",
-      MainTitle: "دوري أبطال إفريقيا",
-      result: [0, 1],
-      status: "تلعب الان",
-      time: "18:00",
-      imgSrcSecond:
-        "https://media.gemini.media/img/yallakora/IOSTeams//120//2018/8/18/Mamelodi2018_8_18_23_12.jpg",
+      badgeColor: " #e68735",
     },
   ]
   return (
@@ -96,8 +80,8 @@ function SwiperComp() {
                   ))}
                 </div>
                 <div
-                  className="text-center p-1 bgOrang w-100 rounded-pill"
-                  pill
+                  className="text-center p-1  w-100 rounded-pill"
+                  style={{ backgroundColor: slide.badgeColor }}
                 >
                   {slide.status}
                 </div>

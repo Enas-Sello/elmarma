@@ -7,7 +7,7 @@ import { BsLinkedin, BsFacebook, BsTwitter } from "react-icons/bs"
 
 const Footer = () => {
   return (
-    <ModalFooter className=" bg-dark flex-column justify-content-center gap-2 text-white p-3">
+    <ModalFooter className="footer  bg-dark flex-column justify-content-center gap-2 text-white p-3">
       <div className="d-flex gap-2">
         <div className="d-flex flex-column text-center">
           <h2>المرمي</h2>
