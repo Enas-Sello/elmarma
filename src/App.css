@@ -52,7 +52,18 @@ a {
   left: 1rem;
   width: 40%;
 }
-
+.mostRedCount {
+  position: relative;
+}
+.mostRedCount::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #c5c1c1;
+  bottom: 0px;
+  left: 5px;
+}
 .swiper-rtl .swiper-button-prev,
 .swiper-button-prev,
 .swiper-rtl {
@@ -67,15 +78,14 @@ a {
 .swiper-rtl .swiper-button-next {
   background-color: #fff;
   top: 22px !important;
-  right: 0px !important;
   height: 100% !important;
   box-shadow: 0.5px 0.5px 4px rgba(0, 0, 0, 0.25);
 }
 .bgOrang {
   background-color: #e68735 !important;
 }
-.sliderAfter::after{
- content: "";
+.sliderAfter::after {
+  content: "";
   position: absolute;
   width: 1px;
   height: 90%;

@@ -17,18 +17,15 @@ const SideBar = () => {
   const List = [
     {
       count: "1",
-      title:
-        "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
+      text: "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
     },
     {
       count: "1",
-      title:
-        "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
+      text: "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
     },
     {
       count: "1",
-      title:
-        "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
+      text: "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
     },
   ]
   return (
@@ -49,10 +46,10 @@ const SideBar = () => {
               {List.map((li) => (
                 <li class="list-group-item">
                   <p className="d-flex fsmain">
-                    {li.title}
-                    <span className="border-start p-3 text-primary">
+                    <span className="mostRedCount p-3 text-primary">
                       {li.count}
                     </span>
+                    {li.text}
                   </p>
                 </li>
               ))}
@@ -62,7 +59,7 @@ const SideBar = () => {
           <Card className="text-white text-end ">
             <Card.Img src="images/email.jpg" className="card-img" alt="..." />
             <Card.ImgOverlay className="d-flex flex-column justify-content-center gap-5">
-              <div>
+              <div className="d-flex flex-column justify-content-center align-items-start">
                 <Card.Title className="fs-6">اشترك في </Card.Title>
                 <Card.Text className="fs-4 text-muted">
                   النشرة البريدية
@@ -70,9 +67,9 @@ const SideBar = () => {
               </div>
               <div className="d-flex flex-column justify-content-center gap-3">
                 {" "}
-                <Form>
+                <Form className="d-flex flex-column justify-content-center align-items-end">
                   <Form.Control
-                    className="bg-dark"
+                    className="bg-dark text-center"
                     type="email"
                     placeholder="أدخل بريدك الالكتروني"
                   />

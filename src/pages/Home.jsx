@@ -54,8 +54,8 @@ export const Home = ({ title }) => {
       <Container>
         <SwiperComp />
         <Row>
-          <SideBar />
           <Posts />
+          <SideBar />
         </Row>
       </Container>
       <Footer />

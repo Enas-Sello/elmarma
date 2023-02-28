@@ -38,7 +38,8 @@ const PostsCard = ({
                     position: "absolute",
                     bottom: "1rem",
                     left: "50%",
-                    transform: "translate(-35%)",
+                    transform: "translate(25%)",
+                    width: "100%",
                   }}
                 >
                   <small className="text-white fw-bold w-100">

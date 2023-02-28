@@ -48,11 +48,11 @@ const Posts = () => {
   return (
     <div className="col-xl-8 col-md-6  col-xs-12  main p-4 mt-5">
       <Row>
-        <div className="d-flex justify-content-end align-items-center gap-1">
-          <h4 className="fs-4 my-3">الاخبار</h4>
+        <div className="d-flex align-items-center gap-1">
           <CgFileDocument
             style={{ width: "24px", height: "24px", color: "#0573F6" }}
           />
+          <h4 className="fs-4 my-3">الاخبار</h4>
         </div>
       </Row>
       <Row>

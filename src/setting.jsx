@@ -26,7 +26,7 @@ export const Settings = ({ title }) => {
 
   ///
   /////////// SIDE EFFECTS
-  ///
+  const AR = document.documentElement.lang
   const { i18n } = useTranslation()
   useEffect(() => {
     document.documentElement.dir = isRTL ? "rtl" : "ltr"
@@ -35,7 +35,6 @@ export const Settings = ({ title }) => {
   ///
   /////////// IF CASES
   ///
-
   ///
   /////////// EVENTS
   ///
@@ -49,8 +48,11 @@ export const Settings = ({ title }) => {
   ///
   return (
     <>
-      <button onClick={toggleLang} className="border-0 bg-transparent text-white">
-        EN{" "}
+      <button
+        onClick={toggleLang}
+        className="border-0 bg-transparent text-white"
+      >
+        {AR === "en" ? "عربي" : "EN"}
       </button>
     </>
   )
