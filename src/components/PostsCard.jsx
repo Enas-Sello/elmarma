@@ -1,20 +1,7 @@
 import React from "react"
 import { Badge, Card, Col } from "react-bootstrap"
 
-const PostsCard = ({
-  xs,
-  lg,
-  xl,
-  posts,
-  TimeLineBgTrack,
-  TimeLineText,
-  ImgOverlay,
-  Img,
-  overlayTitle,
-  cardTitle,
-  cardText,
-  cardFooter,
-}) => {
+const PostsCard = ({ xs, lg, xl, posts, ImgOverlay }) => {
   return (
     <>
       {posts.map((post) => (

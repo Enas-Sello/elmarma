@@ -1,6 +1,7 @@
 import React from "react"
 import { createBrowserRouter } from "react-router-dom"
 import Matches from "./Matches"
+import News from "./News"
 import Posts from "./Posts"
 import Root from "./Root"
 
@@ -17,6 +18,10 @@ export const Routs = createBrowserRouter([
       {
         path: "matches",
         element: <Matches />,
+      },
+      {
+        path: "news",
+        element: <News />,
       },
     ],
   },

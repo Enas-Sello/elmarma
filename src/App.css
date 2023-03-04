@@ -13,7 +13,7 @@
   font-weight: 500;
 }
 img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .Social svg {
   fill: #c5c1c1;
