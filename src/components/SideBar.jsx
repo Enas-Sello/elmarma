@@ -29,7 +29,12 @@ const SideBar = () => {
     },
   ]
   return (
-    <div className="col-xl-4 col-md-6  mt-5 d-none d-md-block">
+    <div
+      className="col-xl-4 col-md-6   d-none d-md-block"
+      style={{
+        marginTop: "2.5rem",
+      }}
+    >
       <Row>
         <div className="d-flex flex-column gap-3">
           <PostsCard posts={posts} xs={12} lg={12} xl={12} ImgOverlay />

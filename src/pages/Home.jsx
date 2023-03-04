@@ -2,6 +2,7 @@
 ///
 import { Container, Row } from "react-bootstrap"
 import { Helmet } from "react-helmet"
+import ButtonGroups from "../components/ButtonGroups"
 import Footer from "../components/Footer"
 import { Navbar } from "../components/Navbar"
 import SideBar from "../components/SideBar"
@@ -49,7 +50,6 @@ export const Home = ({ title }) => {
       <Helmet>
         <title>{title}</title>
       </Helmet>
-
       <Navbar />
       <Container>
         <SwiperComp />

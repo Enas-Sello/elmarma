@@ -52,7 +52,7 @@ export const Settings = ({ title }) => {
         onClick={toggleLang}
         className="border-0 bg-transparent text-white"
       >
-        {AR === "en" ? "عربي" : "EN"}
+        {AR === "en" ? "ar" : "EN"}
       </button>
     </>
   )
