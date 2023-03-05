@@ -27,12 +27,16 @@ const SideBar = () => {
       count: "1",
       text: "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
     },
+    {
+      count: "1",
+      text: "خبر المرمي - أسامة نبيه يقترب من الرحيل عن الزمالك.. والقرار الأقرب بخصوص فيريرا",
+    },
   ]
   return (
     <div
       className="col-xl-4 col-md-6   d-none d-md-block"
       style={{
-        marginTop: "2.5rem",
+        marginTop: "-7px",
       }}
     >
       <Row>

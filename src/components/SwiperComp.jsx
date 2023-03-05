@@ -76,7 +76,7 @@ function SwiperComp() {
     },
   ]
   return (
-    <div className="mt-4">
+    <div className="mt-4 mainSwipe">
       <ButtonGroups/>
 
       <Swiper
